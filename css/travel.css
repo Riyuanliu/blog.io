@@ -173,22 +173,22 @@
   }
   
   .slide1 {
-    background-image: url("/image/travel-new-york.jpg");
+    background-image: url("../image/travel-new-york.jpg");
   }
   
   .slide2 {
-    background-image: url("/image/travel-texas.jpg");
+    background-image: url("../image/travel-texas.jpg");
   }
   
   .slide3 {
-    background-image: url("/image/travel-hunter-mountain.jpg");
+    background-image: url("../image/travel-hunter-mountain.jpg");
   }
   
   .slide4 {
-    background-image: url("/image/travel-philly.jpg ");
+    background-image: url("../image/travel-philly.jpg ");
   }
   .slide5 {
-    background-image: url("/image/travel-washington-dc.jpg ");
+    background-image: url("../image/travel-washington-dc.jpg ");
   }
   
   

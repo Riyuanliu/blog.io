@@ -14,9 +14,9 @@
         var leftBox = frame.getElementsByClassName('left')[0];
         var rightBox = frame.getElementsByClassName('right')[0];
         // Setting background images
-        frontBox.style.backgroundImage = 'url(../image/' + (i + 1).toString().padStart(2, '0') + '.jpg)';
-        leftBox.style.backgroundImage = 'url(../image/' + (i + 1).toString().padStart(2, '0') + '.jpg)';
-        rightBox.style.backgroundImage = 'url(../image/' + (i + 1).toString().padStart(2, '0') + '.jpg)';
+        frontBox.style.backgroundImage = 'url(./image/' + (i + 1).toString().padStart(2, '0') + '.jpg)';
+        leftBox.style.backgroundImage = 'url(./image/' + (i + 1).toString().padStart(2, '0') + '.jpg)';
+        rightBox.style.backgroundImage = 'url(./image/' + (i + 1).toString().padStart(2, '0') + '.jpg)';
     }
 
     // The rest of your existing code for slider functionality remains unchanged.
