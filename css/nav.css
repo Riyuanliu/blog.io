@@ -290,4 +290,9 @@ li.search-box input {
 .dark .switch::before {
   left: 20px;
 } 
+@media screen and (max-width: 730px) {
+  #nav{
+    display: none;
+  }
+}
   

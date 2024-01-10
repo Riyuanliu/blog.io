@@ -108,3 +108,16 @@
     width: 480px;
     float: left;
 }
+@media screen and (max-width: 730px) {
+    #about .shell{
+        height: auto;
+
+        padding-bottom: 30px;
+    }
+    #about .tags,
+    #about .introduce{
+        align-items: center;
+        float:inline-start;
+        width: 100%;
+    }
+}
