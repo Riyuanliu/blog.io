@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root {
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+}
+#games{
+    background: black;
+}
+#games,
+#games .games-items {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins' sans-serif;
+
+}
+#games .games-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-image .7s ease-in-out; 
+
+}
+#games .games-items .shell {
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: rgba(99, 99, 99, 0.8); 
+}
+#games .row{
+    max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+#games .games-items .shell .row h2{
+    font-size: 55px;
+    margin: 0;
+}
+#games .games-items .shell .button {
+    display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 380px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -80px; 
+}
+#games .games-items .shell .button .prev,
+#games .games-items .shell .button .next {
+    transition: transform 0.25s ease;
+            z-index: 99999;
+            bottom: 5px; 
+}
+
+#games .games-items .shell .button .prev i,
+#games .games-items .shell .button .next i {
+    font-size: 90px;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 0 10px #ffffff; 
+}
+
+#games .games-items .shell .shell_body {
+    width: 100%;
+            transform: scale(.8);
+            padding: 20px 0 150px 0; 
+}
+
+
+#games .games-items .shell .shell_slider {
+    position: relative;
+    transition: transform 1s ease-in-out;
+    background: transparent;
+} 
+#games .games-items .shell .shell_slider .item{
+    position: relative;
+    float: left;
+    margin: 0 20px;
+}
+#games .games-items .shell .shell_slider .item .frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+#games .games-items .shell .shell_slider .item .frame:after {
+    content: "";
+    position: absolute;
+    bottom: -16%;
+    width: 100%;
+    height: 60px;
+    background: #ffffff1c;
+    box-shadow: 0px 0px 15px 5px #ffffff1c;
+    transform: rotateX(90deg) translate3d(0px,-20px, 0px);
+}
+
+
+#games .games-items .shell .shell_slider .item .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    max-width: 100%; /* Adjust as needed */
+    max-height: 100%; /* Adjust as needed */
+} 
+#games .games-items .shell .shell_slider .item .box h1,
+#games .games-items .shell .shell_slider .item .box span {
+    color: #fff;
+    transform: translateZ(20px);
+}
+
+#games .games-items .shell .shell_slider .item .box h1 {
+    text-shadow: 0 0 30px #090327;
+    font-size: 8vh;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: min(5vw, 5vh); /* Adjust the font size as needed */
+}
+
+#games .games-items .shell .shell_slider .item .box span {
+    position: absolute;
+    bottom: 20px;
+    padding: 0 25px;
+    text-shadow: 0 0 10px #1f05b4;
+} 
+
+#games .games-items .shell .shell_slider .item .front,
+#games .games-items .shell .shell_slider .item .left,
+#games .games-items .shell .shell_slider .item .right {
+    box-shadow: 0 0 50px #535353;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#games .games-items .shell .shell_slider .item .right,
+#games .games-items .shell .shell_slider .item .left {
+    top: 0;
+    width: 60px;
+    backface-visibility: hidden;
+}
+
+#games .games-items .shell .shell_slider .item .left {
+    left: 0;
+    border-left-width: 5px;
+    transform: translate3d(1px, 0, -60px) rotateY(-90deg);
+    transform-origin: 0%;
+}
+
+#games .games-items .shell .shell_slider .item .right {
+    right: 0;
+    border-right-width: 5px;
+    transform: translate3d(-1px, 0, -60px) rotateY(90deg);
+    transform-origin: 100%;
+}
+#games .section-title, #games h2{
+    color: white;
+    padding-bottom: 30px;
+  }
+#games .row{
+    display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}

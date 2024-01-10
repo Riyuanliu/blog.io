@@ -1,0 +1,77 @@
+#work-portfolio{
+    background: linear-gradient(to bottom, var(--bg-black-900) 0%, rgba(0,0,0,0) 50%, var(--bg-black-900) 100%), url("../image/portfolio.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+
+}
+#work-portfolio .portfolio-content{
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin-bottom: 120px; 
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+.section-title{
+    color: white;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+#work-portfolio .row{
+    display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+#work-portfolio .container{
+    padding-bottom: 40px;
+}
+#work-portfolio .portfolio-heading
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+
+}
+
+#work-portfolio .portfolio-heading h2
+{
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+#work-portfolio .portfolio-item
+{
+    /* adjust to 33.33% for 3 rows 30px */
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 30px;
+}
+
+#work-portfolio .portfolio-item-inner{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#work-portfolio .portfolio-item-inner .portfolio-img img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+#work-portfolio .portfolio-item-inner .portfolio-img img:hover{
+    opacity: 1;
+}

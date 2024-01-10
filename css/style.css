@@ -1,0 +1,57 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* 当用户手动导航或者 CSSOM scrolling API 触发滚动操作时 */
+    scroll-behavior: smooth; 
+  }
+body{
+    background: var(--bg-black-900);
+}
+
+
+  .hidden{
+    display: none;
+  }
+
+.section .section-title{
+    color: var(--text-black-900);
+    font-size: 30px ;
+}
+
+
+/* 定义动画 */
+@keyframes carousel {
+
+    0%,
+    17.5% {
+        transform: translateZ(-35vw) rotateY(0);
+        /* 变换：沿z轴平移-35vw，绕y轴旋转0度 */
+    }
+
+    27.5%,
+    45% {
+        transform: translateZ(-35vw) rotateY(-120deg);
+        /* 变换：沿z轴平移-35vw，绕y轴旋转-120度 */
+    }
+
+    55%,
+    72.5% {
+        transform: translateZ(-35vw) rotateY(-240deg);
+        /* 变换：沿z轴平移-35vw，绕y轴旋转-240度 */
+    }
+
+    82.5%,
+    100% {
+        transform: translateZ(-35vw) rotateY(-360deg);
+        /* 变换：沿z轴平移-35vw，绕y轴旋转-360度 */
+    }
+}
+
+.section-sub-title{
+    padding-left: 30px;
+    color: var(--text-black-700);
+    font-size: 30px;
+}

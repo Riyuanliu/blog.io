@@ -1,0 +1,68 @@
+#interests{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-black-900);
+}
+#interests .shell{
+    width: 90%;
+    height: 700px;
+    display: flex;
+
+
+}
+
+#interests .box{
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    border: 10px solid var(--bg-black-100);
+    background-color: var(--bg-black-700);
+    color: var(--text-black-900);
+    
+}
+#interests .box>img{
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+    transition: .5s;
+}
+#interests .box>span{
+    font: 200 45px;
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none; /* Remove underline */
+}
+#interests .box a {
+    text-decoration: none; /* Remove underline for anchor elements */
+    color: inherit; /* Ensures anchor color matches parent */
+}
+#interests .box:hover{
+    flex-basis: 40%;
+    
+}
+#interests .box:hover>img{
+    width: 100%;
+    height: 100%;
+} 
+.section-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .section-title h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    /* Other styles you may want to add */
+  }
